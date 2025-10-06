@@ -1,0 +1,32 @@
+@1,3 say 'ВОЗВРАТ'
+@5,3 say 'Пpодукт   '
+@4,12 to 6,39 double
+@5,14 say prod
+@8,3 say 'Возврат: ' get prihod
+@10,3 say 'Цена:   ' get cena
+@12,3 say 'Куда:   ' get prv range 0,1
+@12,col()+2 say '(1-Гум.помощь; 0-Общ.склад)'
+@20,0 to 24,80 double
+@20,20 say chr(203)
+@20,48 say chr(203)
+@24,20 say chr(202)
+@24,48 say chr(202)
+@21,20 to 23,20 double
+@21,48 to 23,48 double
+@0,58 say '<Esc> - в Главное меню'
+@ 22, 2  say "*** Запись: "
+@ 22, col()  say str(recno(),3)  
+@ 23, 2  say "***  Всего: "
+@ 23, col()  say str(reccount(),3)
+@ 21,29 say " ВНИЗ "
+@22,22 say 'Запись: <PgDn> <PgUp>'
+@23,22 say 'Поле  :   < >    < >'
+@23,33 say chr(25)
+@23,40 say chr(24)
+@21,37 say 'ВВЕРХ'
+@23,52 say"*** Дата:"
+@23,col()+3 say date()
+@22,52 say '*** Вpемя:'
+@22,col()+3 say time()
+read
+
